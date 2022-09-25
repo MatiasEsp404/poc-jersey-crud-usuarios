@@ -14,6 +14,7 @@ import java.util.Map;
 @Path("/users")
 public class UserService {
 
+    // Vi este sistema de maps en el trabajo de un compañero y me encantó ¡Super práctico! <3
     private static final Map<String, UserEntity> USERS = new HashMap<>();
 
     public UserService() {
@@ -22,6 +23,7 @@ public class UserService {
         USERS.put("savila", new UserEntity("savila", "Sol"));
     }
 
+    // Reordené los metodos por puro capricho. CRUD -> Create, Read, Update, Delete. 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
